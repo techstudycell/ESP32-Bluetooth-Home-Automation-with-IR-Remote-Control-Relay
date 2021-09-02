@@ -81,19 +81,20 @@ To make the circuit compact and give a professional look, I have designed the PC
 
 You can download the PCB Gerber file of this home automation project from the following link:
 
+https://github.com/techstudycell/ESP32-Bluetooth-Home-Automation-with-IR-Remote-Control-Relay/tree/main/PCB%20Gerber
 
 ## Order the PCB from JLCPCB
 After downloading the Garber file you can easily order the PCB
 
-Visit https://jlcpcb.com/RAB and Sign in / Sign up
-Click on the QUOTE NOW button.
-Click on the "Add gerber file" button. Then browse and select the Gerber file you have downloaded.
-Set the required parameter like Quantity, PCB masking color, etc.
-After selecting all the Parameters for PCB click on SAVE TO CART button.
-Type the Shipping Address.
-Select the Shipping Method suitable for you.
-Submit the order and proceed with the payment.
-You can also track your order from the JLCPCB.com
+1. Visit https://jlcpcb.com/RAB and Sign in / Sign up
+2. Click on the QUOTE NOW button.
+3. Click on the "Add gerber file" button. Then browse and select the Gerber file you have downloaded.
+4. Set the required parameter like Quantity, PCB masking color, etc.
+5. After selecting all the Parameters for PCB click on SAVE TO CART button.
+6. Type the Shipping Address.
+7. Select the Shipping Method suitable for you.
+8. Submit the order and proceed with the payment.
+9. You can also track your order from the JLCPCB.com
 
 My PCBs took 2 days to get manufactured and arrived within a week using the DHL delivery option. PCBs were well packed and the quality was really good at this affordable price.
 
@@ -102,3 +103,56 @@ After that, I have soldered all the components as per the circuit diagram.
 
 Then connect the ESP32, 1838 IR receiver with the PCB.
 
+## Codes for the ESP32 (Bluetooth + IR) Home Automation
+If you use switch (Latched) then refer to the code for Switch, and for momentary switch please use the code for the pushbutton.
+
+Download the Codes for this ESP32 project
+
+https://github.com/techstudycell/ESP32-Bluetooth-Home-Automation-with-IR-Remote-Control-Relay/tree/main/Source%20Code
+
+Download and install the following libraries in Arduino IDE
+
+1. AceButton Library: https://github.com/bxparks/AceButton
+2. IRremote Library: https://github.com/Arduino-IRremote/Arduino-IRremote
+
+## Program the ESP32 With Arduino IDE
+Here, I have given the ESP32 Bluetooth name as "ESP32_BT". To change the name update the following line in void setup().
+
+SerialBT.begin("ESP32_BT"); //Bluetooth device name
+
+Then update the HEX code in the ir_remote function as shown in the tutorial video.
+
+After that, select the DOIT ESP32 DEVKIT V1 board and proper PORT.
+
+Then upload the code to ESP32 Board.
+
+While uploading the code to ESP32, if you see the Connecting....___ text, then press the BOOT button of the ESP32.
+
+## Connect the Home Appliances
+Connect the 8 home appliances as per the circuit diagram.
+
+Please take proper safety precautions while working with high voltage.
+
+Connect 5-volt DC supply with the PCB.
+
+## Connect the Bluetooth App With ESP32
+I have designed the Bluetooth Switch App in MIT App Inventor for this ESP32 Bluetooth project.
+
+Please download and install the Bluetooth App (APK file attached), then you have to connect the Bluetooth App with ESP32.
+
+Turn ON mobile Bluetooth and Pair the ESP32.
+Open the Bluetooth Switch App and tap on "Tap to Connect".
+Select the "ESP32_BT" from the list.
+Now, you can control the relay from mobile with Bluetooth.
+Download Bluetooth App for the ESP32 Bluetooth project
+
+https://github.com/techstudycell/ESP32-Bluetooth-Home-Automation-with-IR-Remote-Control-Relay/tree/main/Bluetooth_Switch_V1_App
+
+## Finally!! the ESP32 Home Automation System Is Ready
+Now you can control your home appliances in a smart way.
+
+I hope you have liked this ESP32 Bluetooth home automation project. I have shared all the required information for this project.
+
+I will really appreciate it if you share your valuable feedback. Also if you have any query please write in the comment section.
+
+Thank you & Happy Learning.
