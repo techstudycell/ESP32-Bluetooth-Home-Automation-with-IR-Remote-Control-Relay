@@ -153,6 +153,6 @@ Now you can control your home appliances in a smart way.
 
 I hope you have liked this ESP32 Bluetooth home automation project. I have shared all the required information for this project.
 
-I will really appreciate it if you share your valuable feedback. Also if you have any query please write in the comment section.
+I will really appreciate it if you share your valuable feedback. Also if you have any query please write in the comment section. 
 
 Thank you & Happy Learning.
