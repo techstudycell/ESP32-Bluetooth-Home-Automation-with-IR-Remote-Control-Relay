@@ -1,7 +1,7 @@
 # ESP32-Bluetooth-Home-Automation-with-IR-Remote-Control-Relay
 ESP32 Bluetooth Home Automation system to control 8 home appliances with Bluetooth, IR remote, and manual switches. You don't need any internet connection for this project.
 
-## Tutorial video link for this IoT-based Home Automation project
+## Tutorial video link for this ESP32 Home Automation project
 https://youtu.be/5c3rmfpAAsE
 
 This ESP32 control smart relay has the following features:
